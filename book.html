@@ -25,10 +25,10 @@
         }
     </script>
     <style>
-        /* Smooth, modern input styling */
+        /* Modern input field design */
         input, textarea {
             background-color: #f9fafb;
-            border: none;
+            border: 1px solid transparent;
             border-radius: 8px;
             padding: 12px;
             width: 100%;
@@ -39,10 +39,11 @@
 
         input:focus, textarea:focus {
             background-color: #ffffff;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border: 1px solid #1f2937;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
         }
 
-        /* Placeholder styling only for event type */
+        /* Placeholder only for event type */
         #event_type::placeholder {
             color: #9ca3af;
         }
@@ -54,9 +55,20 @@
             <a href="/" class="text-xl md:text-2xl font-semibold text-primary">
                 Garland Convention & Reception Center
             </a>
-            <a href="/book.html" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90">
-                Request a Quote
-            </a>
+            <button id="mobile-menu-btn" class="md:hidden">
+                ☰
+            </button>
+            <div class="hidden md:flex gap-6">
+                <a href="/" class="hover:text-primary">Home</a>
+                <a href="/#testimonials" class="hover:text-primary">Testimonials</a>
+                <a href="/#faq" class="hover:text-primary">FAQ</a>
+                <a href="/venue.html" class="hover:text-primary">Our Venue</a>
+                <a href="/gallery.html" class="hover:text-primary">Gallery</a>
+                <a href="/contact.html" class="hover:text-primary">Contact</a>
+                <a href="/book.html" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90">
+                    Request a Quote
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -108,42 +120,23 @@
                 </div>
 
                 <button type="submit" class="w-full bg-primary text-white py-3 rounded-md hover:bg-opacity-90">
-                    Submit Inquiry
+                    Submit Quote Request
                 </button>
             </form>
         </div>
     </main>
 
     <footer class="bg-primary text-white py-12 mt-20">
-        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
-            <div>
-                <h3 class="text-lg font-medium mb-4">Garland Convention Center</h3>
-                <p>1931 E Centerville Rd, Garland, TX 75041</p>
-                <p>(469)-990-0377</p>
-            </div>
-
-            <div>
-                <h3 class="text-lg font-medium mb-4">Quick Links</h3>
-                <ul class="space-y-2">
-                    <li><a href="/" class="hover:underline">Home</a></li>
-                    <li><a href="/#testimonials" class="hover:underline">Testimonials</a></li>
-                    <li><a href="/#faq" class="hover:underline">FAQ</a></li>
-                    <li><a href="/venue.html" class="hover:underline">Our Venue</a></li>
-                    <li><a href="/gallery.html" class="hover:underline">Gallery</a></li>
-                    <li><a href="/contact.html" class="hover:underline">Contact</a></li>
-                    <li><a href="/book.html" class="hover:underline">Request a Quote</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-lg font-medium mb-4">Location</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.2889237006027!2d-96.61990542428291!3d32.89757617608591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864ea1b6b33881cf%3A0x8b93f1c0e6cc0457!2s1931%20E%20Centerville%20Rd%2C%20Garland%2C%20TX%2075041!5e0!3m2!1sen!2sus!4v1709706144185!5m2!1sen!2sus" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Garland Convention & Reception Center. All rights reserved.</p>
+            <p class="text-xs text-gray-300">Site designed and maintained by SLV Solutions.</p>
         </div>
-        <p class="text-center mt-6 text-sm">© 2025 Garland Convention & Reception Center. All rights reserved.</p>
-        <p class="text-center text-xs text-gray-300">Site designed and maintained by SLV Solutions.</p>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <script>
+        document.getElementById("mobile-menu-btn").addEventListener("click", function() {
+            alert("Mobile menu toggled (Placeholder for actual functionality)");
+        });
+    </script>
 </body>
 </html>
