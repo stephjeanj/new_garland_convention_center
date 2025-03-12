@@ -44,21 +44,51 @@ function setupHeroCarousel() {
 // Testimonials Carousel
 const testimonials = [
     {
-        content: "The venue was absolutely perfect for our wedding. The staff was incredibly helpful and professional throughout the entire process.",
-        name: "Sarah & Michael",
-        eventType: "Wedding Celebration",
-        rating: 5
-    },
-    {
-        content: "We hosted our corporate event here and were impressed by the modern amenities and flexible space configuration.",
-        name: "John Smith",
+        content: "We had our company Christmas party here and it was really good. It's a very affordable venue, and the owners were absolutely fantastic to work with. They were incredibly accommodating to our schedule and even let us decorate the day before the party, which was amazing!",
+        name: "Robin Morgan",
         eventType: "Corporate Event",
         rating: 5
     },
     {
-        content: "My daughter's quinceañera was a dream come true. The ballroom's elegance and the staff's attention to detail made it perfect.",
-        name: "Maria Rodriguez",
-        eventType: "Quinceañera",
+        content: "Great local event space with flexibility options. I love that the owner is always helping local small businesses by referring his clients to them for decor, catering, DJ, MC, etc services. That is best benefit of a business - when you help the others around you grow.",
+        name: "Ijeoma O.",
+        eventType: "Local Resident",
+        rating: 5
+    },
+    {
+        content: "This is the best party hall in your reach for large gatherings. Ideally located and the manager is extremely friendly and humble person. The place is very organized and they have dedicated entrances and exits different halls, so there is no interference and disturbance.",
+        name: "Dr. Syed Abraruddin Hasan",
+        eventType: "Local Resident",
+        rating: 4
+    },
+    {
+        content: "Amazing event center! My Nigerian traditional wedding ceremony and reception occupied 2 out of the 3 halls, which was a welcomed task for my decorator. There's lots of parking and a big kitchen which helped the caterers prep and move around easily. Also, the restrooms had enough stalls for the huge amount of guests that attended. The bar area was exceptional to seclude only essential people and needed supplies. I was able to request (very early) the back room for me and my wedding party to change and have our makeup done.",
+        name: "Iroh",
+        eventType: "Traditional Wedding",
+        rating: 5
+    },
+    {
+        content: "Amazing center for weddings, village meetings, etc. My family and I love it here!",
+        name: "Cynthia Williams",
+        eventType: "Local Resident",
+        rating: 5
+    },
+    {
+        content: "These guys are great, knowledgeable, and always so helpful. My husband loves going there.",
+        name: "Suzi Stevenson",
+        eventType: "Local Resident",
+        rating: 5
+    },
+    {
+        content: "Great place for family gatherings or of any type. Family owned and operated. Willing to work with and host all types of people from all types of backgrounds. Well light safe area as well for parties to go late into the night. Also, patrolled by Garland PD for added safety.",
+        name: "Frank I.",
+        eventType: "Local Resident",
+        rating: 5
+    },
+    {
+        content: "This is a beautiful & huge Venue for your important wedding, anniversary, quinceanera or birthday celebrations! The owner, Mr. Jude is absolutely the best provider of wonderful event services in Garland. The Venue has had a recent renovation that is very beautiful to host any size event up to 800 guests. You can Trust Mr. Jude to give you more than what most Vvnues offer. He is a great hands on owner/operator that is present through out any event he hosts",
+        name: "David Newman",
+        eventType: "Local Resident",
         rating: 5
     }
 ];
