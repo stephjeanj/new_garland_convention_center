@@ -79,6 +79,15 @@
             inset: 0;
             background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.5), rgba(0,0,0,0.7));
         }
+        
+        @keyframes bump {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-3px); }
+        }
+        
+        .animate-bump {
+          animation: bump 1.2s ease-in-out infinite;
+        }
     </style>
     <link rel="stylesheet" href="/css/styles.css">
   </head>
@@ -164,12 +173,22 @@
                     </div>
 
                     <div class="flex flex-col items-center gap-6">
-                        <a href="/book" 
-                           class="inline-flex items-center justify-center rounded-md text-2xl px-10 py-6 font-semibold bg-primary text-white hover:bg-primary/90 transform hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl hover:underline decoration-1 decoration-white/50 underline-offset-8">
+                        <a href="/book"
+                           class="inline-flex items-center justify-center 
+                                  rounded-2xl text-[35px] font-semibold 
+                                  px-10 py-6 
+                                  text-white border-[1.5px] border-primary 
+                                  hover:text-primary hover:underline underline-offset-8 
+                                  decoration-primary 
+                                  transition-all duration-300 
+                                  transform hover:scale-105 
+                                  shadow-md hover:shadow-xl 
+                                  animate-bump">
                             Request a Quote
                         </a>
+
                         <a href="/gallery"
-                           class="inline-flex items-center justify-center rounded-md px-6 py-3 bg-white/10 text-white border-white/20 hover:bg-white/20 transform hover:scale-105 transition-transform duration-300 hover:underline decoration-1 decoration-white/50 underline-offset-8">
+                           class="inline-flex items-center justify-center rounded-md px-6 py-3 bg-white/10 text-white border border-white/20 hover:bg-white/20 transform hover:scale-105 transition-transform duration-300 hover:underline decoration-1 decoration-white/50 underline-offset-8">
                             View Gallery
                         </a>
                     </div>
@@ -260,7 +279,7 @@
                     <div class="group relative overflow-hidden rounded-lg">
                         <div class="aspect-[4/3] relative">
                             <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                                 style="background-image: url('images/image_1741212360028.png')">
+                                 style="background-image: url('images/galley_img.jpeg')">
                             </div>
                             <div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-500"></div>
                             <div class="absolute inset-0 p-6 flex flex-col justify-end text-white">
@@ -334,7 +353,7 @@
 
         <!-- Mission Statement Section -->
         <section class="py-20 relative overflow-hidden">
-            <div class="absolute inset-0 z-0" style="background-image: url('images/big_table.jpeg'); background-size: cover; background-position: center; filter: brightness(0.3)">
+            <div class="absolute inset-0 z-0" style="background-image: url('images/chandelier.jpeg'); background-size: cover; background-position: center; filter: brightness(0.3)">
             </div>
 
             <div class="container mx-auto px-4 relative z-10">
